@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dynamic Resume Builder</title>
+  </head>
+  <body>
+    <h1>Dynamic Resume Builder</h1>
+    <div class="resume-header">
+      <img src="/_ca8f745f-77a8-45cb-ab10-3559601932e5.jpeg" alt="display-Picture" class="display-Picture" />
+    </div>
+    <form id="resumeform">
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="full-name">Full Name: </label>
+        <input type="text" id="full-name" name="full-name" required /><br />
+
+        <label for="email-address">Email Address: </label>
+        <input
+          type="email"
+          id="email-address"
+          name="email-address"
+          required
+        /><br />
+
+        <label for="contact-number">Contact Number: </label>
+        <input type="tel" id="contact-number" name="contact-number" required />
+      </fieldset>
+
+      <!-- Education -->
+      <fieldset>
+        <legend>Education</legend>
+        <label for="education">Education</label>
+        <textarea name="education" id="education" rows="4" required></textarea><br />
+      </fieldset>
+
+      <!-- Experience -->
+      <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Experience</label>
+        <textarea name="experience" id="experience" rows="4" required></textarea><br />
+      </fieldset>
+
+      <!-- Skills -->
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills</label>
+        <textarea name="skills" id="skills" rows="4" required></textarea><br />
+      </fieldset>
+
+      <!-- Home Address -->
+      <fieldset>
+        <legend>Home Address</legend>
+        <label for="home-address">Home Address</label>
+        <textarea name="home-address" id="home-address" rows="2" required></textarea><br />
+      </fieldset>
+
+      <!-- LinkedIn Profile -->
+      <fieldset>
+        <legend>LinkedIn Profile</legend>
+        <label for="linkedin-profile">LinkedIn Profile</label>
+        <input
+          type="url"
+          name="linkedin-profile"
+          id="linkedin-profile"
+          placeholder="https://linkedin.com/in/yourprofile"
+          required
+        /><br />
+      </fieldset>
+
+      <button type="submit">Generate Your Resume</button>
+    </form>
+
+    <div id="Output"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
